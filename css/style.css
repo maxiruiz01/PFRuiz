@@ -12,6 +12,7 @@ header{
 body{
     background-image: linear-gradient(to bottom, #ffe3e3, #fecbcb, #fcb3b2, #f89b9a, #f28282);
 }
+
 .titulo{
     width: 100%;
     gap: 10px;
@@ -39,14 +40,6 @@ body{
     justify-content: flex-end;
     
 }
-
-.subtitulo{
-    width: 15%;
-    color: black;
-    border: 4px solid black;
-    border-radius: 10%;
-    margin: 40px;
-}
 .banner p{
     width: 10%;
     margin: 40px;
@@ -55,31 +48,47 @@ body{
     width: 100%;
     padding: 0% 40%;
 }
+.subtitulo{
+    width: 15%;
+    color: black;
+    border: 4px solid black;
+    border-radius: 5%;
+    margin: 40px;
+}
+.subtitulo p{
+    width: 64%;
+    font-size: large;
+}
+.img{
+    
+    width: 100%;
+    height: 100%;
+    margin: 40px 20px;
+}
+
 .subtitulo2{
     width: 15%;
     color: black;
     border: 4px solid black;
-    border-radius: 10%;
+    border-radius: 5%;
     margin: 40px;
 }
-.parrafo{
+.subtitulo2 p{
+    width: 30%;
     color: black;
     border: 4px solid red;
     border-radius: 10%;
+    margin: 20px;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
     background-color: rgb(253, 158, 158);
-}
-footer h4{
-    margin: 20px;
-}
-footer p {
     
-    margin: 20px;
 }
+
+
 
 /*
 Empieza css de salas

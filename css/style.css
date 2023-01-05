@@ -3,12 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    width: 100%;
-    background-color: rgb(242, 214, 214);  
-    display: flex;
-    
-}
+
 body{
     background-image: linear-gradient(to bottom, #ffe3e3, #fecbcb, #fcb3b2, #f89b9a, #f28282);
 }
@@ -26,19 +21,15 @@ body{
     align-self: center;
 }
 
-.nav{
-    width: 90%;
-
-}
 .navBar{
-    width: 100%;
+    list-style: none;
     background-color: rgb(242, 214, 214);
-    gap: 80px;
-    padding-top: 20px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     
+}
+.navBar li a{
+    color: black;
+    text-decoration: none;
 }
 .banner{
     display: grid;
@@ -116,8 +107,6 @@ body{
 
 /*
 Empieza css de salas
-
-
 */
 
 .banner-salas img{

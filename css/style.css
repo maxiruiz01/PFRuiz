@@ -95,11 +95,11 @@ body{
     border-radius: 10%;
     margin: 20px;
 }
-
-.footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(253, 158, 158);
+.nose{
+    background-color: rgb(255, 250, 250) ;
+}
+.nose li a{
+    text-decoration: none;
     
 }
 

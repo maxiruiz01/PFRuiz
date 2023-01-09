@@ -10,7 +10,7 @@ body{
 
 .titulo{
     width: 100%;
-    gap: 10px;
+    gap: 5px;
 }
 .titulo img{
     width: 50px;
@@ -19,11 +19,11 @@ body{
 .titulo a{
     color: black;
     align-self: center;
+    justify-content: flex-start;
 }
 
 .navBar{
     list-style: none;
-    background-color: rgb(242, 214, 214);
     justify-content: end;
     
 }
@@ -31,76 +31,49 @@ body{
     color: black;
     text-decoration: none;
 }
-.banner{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(5, 200px);  /*declara la cantidad de columnas que quiero*/
-    grid-template-rows: repeat(4, 200px);
-    grid-template-areas: /*cada apertura y cierre de comillas representa una fila*/
-    "item1 item2 item2 item2 item2"
-    "item1 item2 item2 item2 item2"
-    "item3 item2 item2 item2 item2"
-    "item3 item2 item2 item2 item2" 
-    ;  
-    justify-content: flex-start;
-    align-content: flex-start;
+.carrusel{
+    justify-content: center;
+    display: flex;
 }
-.subtitulo{
-    grid-area: item1;  
-    width: 100%;
-    height: 60%;
-    color: black;
-    border: 4px solid black;
-    border-radius: 5%;
-    margin: 40px;
-} 
-.subtitulo p{
-    width: 100%;
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    background-color:  #fcb3b2;
+}
+.card1{
+    margin: 20px;
     
 }
-.img{
-    grid-area: item2;
-    width: 100%;
-    margin-left: 450px;
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 50px;
-}
-
-
-/* .banner img {
-    width: 100%;
-    padding: 0% 40%;
-} */
-
-
-
-
-.subtitulo2{
-    grid-area: item3;
-    width: 80%;
-    height: 60%;
-    color: black;
-    border: 4px solid black;
-    border-radius: 5%;
-    margin: 40px;
-}
-.subtitulo2 p{
-    width: 50%;
-    color: black;
-    border: 4px solid red;
-    border-radius: 10%;
+.card2{
     margin: 20px;
 }
-.nose{
-    background-color: rgb(255, 250, 250) ;
+
+.footer{
+    background-color: #f6d4d4;
+
 }
-.nose li a{
+.footer li a{
     text-decoration: none;
     
+}
+@media (max-width:768px) {
+    .titulo a{
+        font-size: 18px;
+    }
+}
+@media (max-width: 320px){
+    .titulo a{
+        font-size: 16px;
+    }
+    .cards h5{
+        font-size: 18px;
+    }
+    .cards h5 p{
+        font-size: 15px;
+    }
 }
 
 
@@ -126,11 +99,22 @@ css de equipo
 /*
 css de galeria
 */
-
-.galeria img{
-    width: 500px;
-    height: 400px;
-    margin: 40px 20px;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+    grid-gap: 5px;
+}
+.grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid img:active{
+    /* transform: translate(40px, 80px); */
+    cursor: pointer;
+    transform: scale(1.5);
 }
 /*
 css de contacto

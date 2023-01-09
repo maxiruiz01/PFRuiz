@@ -38,7 +38,7 @@ body{
 
 .cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .card{
     background-color:  #fcb3b2;

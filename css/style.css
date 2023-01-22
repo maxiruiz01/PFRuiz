@@ -12,7 +12,7 @@
   .titulo a {
     color: black;
     align-self: center;
-    justify-content: flex-start; }
+    justify-content: start; }
 
 .navBar {
   list-style: none;
@@ -32,7 +32,8 @@ body {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "item1 item2" "item1 item2"; }
+  grid-template-areas: "item1 item2"
+ "item1 item2"; }
   .carrusel-cards .cards {
     grid-area: item1;
     margin: 20px;
@@ -135,7 +136,8 @@ body {
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "item1 item1" "item2 item2"; }
+    grid-template-areas: "item1 item1"
+ "item2 item2"; }
     .carrusel-cards .cards {
       display: flex;
       justify-content: center;
@@ -168,7 +170,8 @@ body {
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "item1 item1" "item2 item2"; }
+    grid-template-areas: "item1 item1"
+ "item2 item2"; }
     .carrusel-cards .cards {
       display: flex;
       justify-content: center;

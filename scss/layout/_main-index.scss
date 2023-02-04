@@ -8,7 +8,12 @@ body{
 
 .carrusel-cards{
     @include grid(flex-start,center,1fr 1fr, 1fr);
-    .cards{
+    
+        
+    .card1{
+        .card{
+            background-color: rgb(220, 254, 170);
+        }
         h5{
             font-family: $typo-principal;
             font-size: 22px;
@@ -20,14 +25,29 @@ body{
         grid-area: item1;
         margin: 20px;
         padding: 20px;
-        .card1{
     
-            margin: 20px;
-        }
-        .card2{
-            @extend .card1
-        }
+        
     }
+    .card2{
+        display: flex;
+        grid-area: item3;
+        justify-content: flex-start;
+        margin: 20px;
+        padding: 20px;
+        .card{
+            background-color: rgb(220, 254, 170);
+        }
+        h5{
+            font-family: $typo-principal;
+            font-size: 22px;
+        }
+        p{
+            font-family: $typo-secundario;
+            font-size: 16px;
+        }
+        
+    }
+    
     .carrusel{
         justify-content: flex-start ;
         padding: 100px;

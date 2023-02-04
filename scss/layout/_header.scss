@@ -1,22 +1,28 @@
-.titulo{
-    width: 100%;
-    gap: 5px;
-    img{
-        width: 50px;
-        border-radius: 50%;
+header{
+    background-color: rgb(232, 232, 232);
+    position:inherit;
+    .titulo{
+        width: 100%;
+        gap: 5px;
+        img{
+            width: 50px;
+            border-radius: 50%;
+        }
+        a{
+            color: black;
+            align-self: center;
+            justify-content: start;
+        }
     }
-    a{
-        color: black;
-        align-self: center;
-        justify-content: start;
+    .navBar{
+        list-style: none;
+        justify-content: end;
+        
+        
+        li a{
+            color: black;
+            text-decoration: none;
+        }
+        
     }
-}
-.navBar{
-    list-style: none;
-    justify-content: end;
-    li a{
-        color: black;
-        text-decoration: none;
-    }
-    
 }

@@ -3,23 +3,25 @@
   margin: 0;
   box-sizing: border-box; }
 
-.titulo {
-  width: 100%;
-  gap: 5px; }
-  .titulo img {
-    width: 50px;
-    border-radius: 50%; }
-  .titulo a {
-    color: black;
-    align-self: center;
-    justify-content: start; }
-
-.navBar {
-  list-style: none;
-  justify-content: end; }
-  .navBar li a {
-    color: black;
-    text-decoration: none; }
+header {
+  background-color: #e8e8e8;
+  position: inherit; }
+  header .titulo {
+    width: 100%;
+    gap: 5px; }
+    header .titulo img {
+      width: 50px;
+      border-radius: 50%; }
+    header .titulo a {
+      color: black;
+      align-self: center;
+      justify-content: start; }
+  header .navBar {
+    list-style: none;
+    justify-content: end; }
+    header .navBar li a {
+      color: black;
+      text-decoration: none; }
 
 body {
   background-color: white;
@@ -32,20 +34,33 @@ body {
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "item1 item2"
- "item1 item2"; }
-  .carrusel-cards .cards {
+  grid-template-areas: "item1 item2" "item3 item2"; }
+  .carrusel-cards .card1 {
     grid-area: item1;
     margin: 20px;
     padding: 20px; }
-    .carrusel-cards .cards h5 {
+    .carrusel-cards .card1 .card {
+      background-color: #dcfeaa; }
+    .carrusel-cards .card1 h5 {
       font-family: "Roboto", sans-serif;
       font-size: 22px; }
-    .carrusel-cards .cards p {
+    .carrusel-cards .card1 p {
       font-family: "Open Sans", sans-serif;
       font-size: 16px; }
-    .carrusel-cards .cards .card1, .carrusel-cards .cards .card2 {
-      margin: 20px; }
+  .carrusel-cards .card2 {
+    display: flex;
+    grid-area: item3;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px; }
+    .carrusel-cards .card2 .card {
+      background-color: #dcfeaa; }
+    .carrusel-cards .card2 h5 {
+      font-family: "Roboto", sans-serif;
+      font-size: 22px; }
+    .carrusel-cards .card2 p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px; }
   .carrusel-cards .carrusel {
     justify-content: flex-start;
     padding: 100px;
@@ -53,8 +68,7 @@ body {
     grid-area: item2; }
 
 .footer {
-  width: 100%;
-  height: 100%; }
+  background-color: #e8e8e8; }
   .footer li a {
     text-decoration: none; }
 
@@ -99,107 +113,281 @@ body {
     cursor: pointer;
     transform: scale(1.5); }
 
-.maps {
-  width: 100%;
-  height: 100%; }
-
-.formularios {
-  width: 100px;
-  height: 100%; }
-
-.contactos {
-  width: 100%;
-  background-color: #e2c3c3;
-  gap: 80px;
-  padding-top: 20px;
-  margin-right: 20px;
-  display: flex; }
-
-.direccion {
-  width: 100%;
-  background-color: #e2c3c3;
-  padding-top: 20px;
-  margin-right: 20px;
-  display: flow-root; }
-
-.contacto {
-  width: 100%;
-  background-color: #e2c3c3;
-  padding-top: 20px;
-  margin-right: 20px;
-  display: flow-root; }
-
-@media (max-width: 320px) {
-  .titulo a {
-    font-size: 18px; }
-  .carrusel-cards {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "item1 item1"
- "item2 item2"; }
-    .carrusel-cards .cards {
-      display: flex;
-      justify-content: center;
-      grid-area: item2;
-      margin: 20px; }
-      .carrusel-cards .cards h5 {
-        font-size: 16px; }
-      .carrusel-cards .cards p {
-        font-size: 12px; }
-      .carrusel-cards .cards .card1, .carrusel-cards .cards .card2 {
-        background-color: #d3f67a;
-        margin: 20px; }
-      .carrusel-cards .cards .card2 {
-        background-color: #d3f67a;
-        margin: 20px; }
-    .carrusel-cards .carrusel {
-      justify-content: center;
-      padding: 100px;
-      display: flex;
-      grid-area: item1; }
-  .items h2 {
-    font-size: 20px; }
-  .items ul li {
-    font-size: 16px; } }
+.body-contacto {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "item1 item1" "item2 item3"; }
+  .body-contacto .maps {
+    grid-area: item1;
+    width: 100%;
+    height: 100%; }
+  .body-contacto .formulario {
+    grid-area: item3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "Roboto", sans-serif; }
+    .body-contacto .formulario form {
+      position: relative;
+      width: 50%;
+      margin: 15px;
+      padding: 1em; }
+  .body-contacto .contactos {
+    grid-area: item2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .body-contacto .contactos h4 {
+      color: #adfdad; }
+    .body-contacto .contactos p {
+      color: #aaaaaa; }
 
 @media (max-width: 768px) {
+  header {
+    position: relative; }
   .titulo a {
-    font-size: 20px; }
+    font-size: 16px; }
+  .navbar li a {
+    font-size: 14px; }
   .carrusel-cards {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "item1 item1"
- "item2 item2"; }
-    .carrusel-cards .cards {
-      display: flex;
-      justify-content: center;
-      grid-area: item2;
-      margin: 20px;
-      padding: 20px; }
-      .carrusel-cards .cards h5 {
-        font-size: 16px; }
-      .carrusel-cards .cards p {
-        font-size: 14px; }
-      .carrusel-cards .cards .card1, .carrusel-cards .cards .card2 {
-        background-color: #d3f67a;
-        margin: 20px; }
-      .carrusel-cards .cards .card2 {
-        background-color: #d3f67a;
-        margin: 20px; }
+    grid-template-areas: "item1" "item2" "item3"; }
     .carrusel-cards .carrusel {
-      justify-content: center;
-      padding: 100px;
+      padding: 20px;
       display: flex;
       grid-area: item1; }
+    .carrusel-cards .card1 {
+      display: flex;
+      justify-content: center;
+      grid-area: item2; }
+      .carrusel-cards .card1 .card {
+        background-color: #dcfeaa; }
+      .carrusel-cards .card1 h5 {
+        font-size: 16px; }
+      .carrusel-cards .card1 p {
+        font-size: 14px; }
+    .carrusel-cards .card2 {
+      margin: 20px;
+      display: flex;
+      grid-area: item3;
+      justify-content: center; }
+    .carrusel-cards .card {
+      background-color: #dcfeaa; }
+    .carrusel-cards h5 {
+      font-size: 16px; }
+    .carrusel-cards p {
+      font-size: 14px; }
+  .banner-salas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item1" "item2" "item3" "item4";
+    width: 5%; }
+    .banner-salas .card {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start; }
+      .banner-salas .card img {
+        width: 50%; }
+      .banner-salas .card p {
+        color: gray;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px; }
+      .banner-salas .card .card1 {
+        grid-area: item1;
+        width: 50%; }
+      .banner-salas .card .card2 {
+        grid-area: item2;
+        width: 50%; }
+      .banner-salas .card .card3 {
+        grid-area: item3;
+        width: 50%; }
+      .banner-salas .card .card4 {
+        grid-area: item4;
+        width: 50%; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-left: 45px;
+    padding: 10px;
+    grid-gap: 5px; }
+    .grid img {
+      width: 85%;
+      height: 85%;
+      object-fit: cover; }
+    .grid img:active {
+      cursor: pointer;
+      transform: scale(1.5); }
   .banner-equipo img {
     display: flex;
     width: 75%;
     height: 75%;
     padding: 40px;
-    margin-left: 12%; }
-  .items h2 {
-    font-size: 20px; }
-  .items ul li {
-    font-size: 16px; } }
+    margin: 50px; }
+  .banner-equipo .items h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; }
+  .banner-equipo .items ul li {
+    display: flex;
+    justify-content: start;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px; }
+  .body-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item1" "item2" "item3"; }
+    .body-contacto .maps {
+      grid-area: item1;
+      width: 100%;
+      height: 100%; }
+    .body-contacto .formulario {
+      grid-area: item3;
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      width: 100%;
+      height: 100%; }
+    .body-contacto .contactos {
+      grid-area: item2;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      background-color: #feb6b6; }
+      .body-contacto .contactos h4 {
+        font-family: "Roboto", sans-serif;
+        color: #adfdad; }
+      .body-contacto .contactos p {
+        font-family: "Roboto", sans-serif;
+        color: black; } }
+
+@media (max-width: 320px) {
+  header {
+    position: relative; }
+  .titulo a {
+    font-size: 16px; }
+  .navbar li a {
+    font-size: 14px; }
+  .carrusel-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item1" "item2" "item3"; }
+    .carrusel-cards .carrusel {
+      padding: 20px;
+      display: flex;
+      grid-area: item1; }
+    .carrusel-cards .card1 {
+      display: flex;
+      justify-content: center;
+      grid-area: item2; }
+      .carrusel-cards .card1 h5 {
+        font-size: 14px;
+        font-family: "Roboto", sans-serif; }
+      .carrusel-cards .card1 p {
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif; }
+    .carrusel-cards .card2 {
+      margin: 20px;
+      display: flex;
+      grid-area: item3;
+      justify-content: center; }
+      .carrusel-cards .card2 h5 {
+        font-size: 14px; }
+      .carrusel-cards .card2 p {
+        font-size: 12px; }
+  .banner-salas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item1" "item2" "item3" "item4";
+    width: 5%; }
+    .banner-salas .card {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start; }
+      .banner-salas .card img {
+        width: 50%; }
+      .banner-salas .card p {
+        color: gray;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px; }
+      .banner-salas .card .card1 {
+        grid-area: item1;
+        width: 50%; }
+      .banner-salas .card .card2 {
+        grid-area: item2;
+        width: 50%; }
+      .banner-salas .card .card3 {
+        grid-area: item3;
+        width: 50%; }
+      .banner-salas .card .card4 {
+        grid-area: item4;
+        width: 50%; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-left: 45px;
+    padding: 10px;
+    grid-gap: 5px; }
+    .grid img {
+      width: 85%;
+      height: 85%;
+      object-fit: cover; }
+    .grid img:active {
+      cursor: pointer;
+      transform: scale(1.5); }
+  .banner-equipo img {
+    display: flex;
+    width: 75%;
+    height: 75%;
+    padding: 40px;
+    margin: 50px; }
+  .banner-equipo .items h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; }
+  .banner-equipo .items ul li {
+    display: flex;
+    justify-content: start;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px; }
+  .body-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item1" "item2" "item3"; }
+    .body-contacto .maps {
+      grid-area: item1;
+      width: 100%;
+      height: 100%; }
+    .body-contacto .formulario {
+      grid-area: item3;
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif; }
+    .body-contacto .contactos {
+      grid-area: item2;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      background-color: #feb6b6; }
+      .body-contacto .contactos h4 {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        color: #adfdad; }
+      .body-contacto .contactos p {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: black; } }

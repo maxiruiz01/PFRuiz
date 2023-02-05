@@ -38,11 +38,11 @@ body{
             background-color: rgb(220, 254, 170);
         }
         h5{
-            font-family: 'Mochiy Pop One', sans-serif;
+            font-family: $typo-titulo;
             font-size: 22px;
         }
         p{
-            font-family: 'Shadows Into Light', cursive;
+            font-family: $typo-parrafo;
             font-size: 16px;
         }
         

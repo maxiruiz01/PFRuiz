@@ -56,10 +56,10 @@ body {
     .carrusel-cards .card2 .card {
       background-color: #dcfeaa; }
     .carrusel-cards .card2 h5 {
-      font-family: 'Mochiy Pop One', sans-serif;
+      font-family: "Mochiy Pop One", sans-serif;
       font-size: 22px; }
     .carrusel-cards .card2 p {
-      font-family: 'Shadows Into Light', cursive;
+      font-family: "Shadows Into Light", cursive;
       font-size: 16px; }
   .carrusel-cards .carrusel {
     justify-content: flex-start;
@@ -179,8 +179,10 @@ body {
       .carrusel-cards .card1 .card {
         background-color: #dcfeaa; }
       .carrusel-cards .card1 h5 {
+        font-family: "Mochiy Pop One", sans-serif;
         font-size: 16px; }
       .carrusel-cards .card1 p {
+        font-family: "Shadows Into Light", cursive;
         font-size: 14px; }
     .carrusel-cards .card2 {
       margin: 20px;
@@ -190,8 +192,10 @@ body {
     .carrusel-cards .card {
       background-color: #dcfeaa; }
     .carrusel-cards h5 {
+      font-family: "Mochiy Pop One", sans-serif;
       font-size: 16px; }
     .carrusel-cards p {
+      font-family: "Shadows Into Light", cursive;
       font-size: 14px; }
   .banner-salas {
     display: grid;

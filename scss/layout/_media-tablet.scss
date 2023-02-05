@@ -64,22 +64,22 @@
         .banner-salas{
 
         display: grid;
-        grid-template-columns:1fr ;
-        grid-template-rows:1fr;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "item1"
         "item2"
         "item3"
         "item4"
         ;
-        width: 5%;
-        .card{ 
+        width: 50%;
+        .card{
             display: flex;
-            justify-content: start;
-            align-items: flex-start;
-            
+            justify-content: center;
+            align-items: center;
             img{
-            width: 50%;
+                width: 50%;
             }
             p{
                 color: gray;
@@ -88,23 +88,25 @@
             }
             .card1{
                 grid-area: item1;
-                width: 50%;
                 
             }
             .card2{
                 grid-area: item2;
-                width: 50%;
-            }
+                
+            }    
             .card3{
                 grid-area: item3;
-                width: 50%;
+                
+                
             }
             .card4{
                 grid-area: item4;
-                width: 50%;
+                
+                
             }
         }
         }
+        
         
 
 
@@ -175,6 +177,22 @@
                 width: 100%;
                 height: 100%;
             }
+            .contactos{
+                grid-area: item2;
+                display: flex;
+                justify-content:start;
+                align-items: center;
+                margin: 40px;
+                h4{
+                    font-family: $typo-principal;
+                    color: rgb(173, 253, 173);
+                }
+                p{
+                    font-family: $typo-principal;
+                    color: rgb(0, 0, 0);
+                }
+            }
+
             .formulario{
                 grid-area: item3;
                 display: flex;
@@ -184,23 +202,10 @@
                 height: 100%;
             }
             
-            .contactos{
-                grid-area: item2;
-                display: flex;
-                justify-content:start;
-                align-items: center;
-                background-color: rgb(254, 182, 182);
-                h4{
-                    font-family: $typo-principal;
-                    color: rgb(173, 253, 173);
-                }
-                p{
-                    font-family: $typo-principal;
-                    color: rgb(0, 0, 0);
-                }
-                }
+            
         }
         
 
 
-}
+    
+}    

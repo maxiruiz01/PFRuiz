@@ -1,17 +1,33 @@
-
 .banner-salas{
-    
-    .tarjeta1-2{
-        display: flex;
-        justify-content: space-around; 
-        margin: 20px;
-    }
-    .tarjeta3-4{
-        display: flex;
-        justify-content: space-around;
-        margin: 20px;
-        
-    }
-    
+    display: grid;
+    justify-content: center;
 
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    ;
+    .card{
+        display: flex;
+        border-radius: 20px;
+        margin: 20px;
+        margin-left: 200px;
+        
+        .card1{
+            grid-area: item1;
+            
+        }
+        .card2{
+            grid-area: item2;
+        }
+        .card3{
+            grid-area: item3;
+            
+        }
+        .card4{
+            grid-area: item4;
+            
+        }
+    }
 }

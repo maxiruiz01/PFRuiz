@@ -72,15 +72,25 @@ body {
   .footer li a {
     text-decoration: none; }
 
-.banner-salas .tarjeta1-2 {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px; }
-
-.banner-salas .tarjeta3-4 {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px; }
+.banner-salas {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "item1 item2" "item3 item4"; }
+  .banner-salas .card {
+    display: flex;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 200px; }
+    .banner-salas .card .card1 {
+      grid-area: item1; }
+    .banner-salas .card .card2 {
+      grid-area: item2; }
+    .banner-salas .card .card3 {
+      grid-area: item3; }
+    .banner-salas .card .card4 {
+      grid-area: item4; }
 
 .banner-equipo img {
   display: flex;
@@ -183,14 +193,15 @@ body {
       font-size: 14px; }
   .banner-salas {
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "item1" "item2" "item3" "item4";
-    width: 5%; }
+    width: 50%; }
     .banner-salas .card {
       display: flex;
-      justify-content: start;
-      align-items: flex-start; }
+      justify-content: center;
+      align-items: center; }
       .banner-salas .card img {
         width: 50%; }
       .banner-salas .card p {
@@ -198,17 +209,13 @@ body {
         font-family: "Open Sans", sans-serif;
         font-size: 12px; }
       .banner-salas .card .card1 {
-        grid-area: item1;
-        width: 50%; }
+        grid-area: item1; }
       .banner-salas .card .card2 {
-        grid-area: item2;
-        width: 50%; }
+        grid-area: item2; }
       .banner-salas .card .card3 {
-        grid-area: item3;
-        width: 50%; }
+        grid-area: item3; }
       .banner-salas .card .card4 {
-        grid-area: item4;
-        width: 50%; }
+        grid-area: item4; }
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -248,25 +255,25 @@ body {
       grid-area: item1;
       width: 100%;
       height: 100%; }
+    .body-contacto .contactos {
+      grid-area: item2;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 40px; }
+      .body-contacto .contactos h4 {
+        font-family: "Roboto", sans-serif;
+        color: #adfdad; }
+      .body-contacto .contactos p {
+        font-family: "Roboto", sans-serif;
+        color: black; }
     .body-contacto .formulario {
       grid-area: item3;
       display: flex;
       justify-content: start;
       align-items: end;
       width: 100%;
-      height: 100%; }
-    .body-contacto .contactos {
-      grid-area: item2;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      background-color: #feb6b6; }
-      .body-contacto .contactos h4 {
-        font-family: "Roboto", sans-serif;
-        color: #adfdad; }
-      .body-contacto .contactos p {
-        font-family: "Roboto", sans-serif;
-        color: black; } }
+      height: 100%; } }
 
 @media (max-width: 320px) {
   header {

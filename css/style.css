@@ -42,10 +42,10 @@ body {
     .carrusel-cards .card1 .card {
       background-color: #dcfeaa; }
     .carrusel-cards .card1 h5 {
-      font-family: "Roboto", sans-serif;
+      font-family: 'Mochiy Pop One', sans-serif;
       font-size: 22px; }
     .carrusel-cards .card1 p {
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Shadows Into Light', cursive;
       font-size: 16px; }
   .carrusel-cards .card2 {
     display: flex;
@@ -56,10 +56,10 @@ body {
     .carrusel-cards .card2 .card {
       background-color: #dcfeaa; }
     .carrusel-cards .card2 h5 {
-      font-family: "Roboto", sans-serif;
+      font-family: 'Mochiy Pop One', sans-serif;
       font-size: 22px; }
     .carrusel-cards .card2 p {
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Shadows Into Light', cursive;
       font-size: 16px; }
   .carrusel-cards .carrusel {
     justify-content: flex-start;
@@ -83,6 +83,8 @@ body {
     border-radius: 20px;
     margin: 20px;
     margin-left: 200px; }
+    .banner-salas .card h4 {
+      font-family: "Mochiy Pop One", sans-serif; }
     .banner-salas .card .card1 {
       grid-area: item1; }
     .banner-salas .card .card2 {

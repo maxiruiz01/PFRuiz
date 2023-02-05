@@ -13,7 +13,9 @@
         border-radius: 20px;
         margin: 20px;
         margin-left: 200px;
-        
+        h4{
+            font-family: $typo-titulo;
+        }
         .card1{
             grid-area: item1;
             
